@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="GerenciadorMetasFinanceiras.Api/GerenciadorMetasFinanceiras.Api.csproj" />
+  <Project Path="GerenciadorMetasFinanceiras.Infra/GerenciadorMetasFinanceiras.Infra.csproj" />
+  <Project Path="GerenciadorMetasFinanceiras/GerenciadorMetasFinanceiras.Core.csproj" />
+</Solution>
