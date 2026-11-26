@@ -4,12 +4,12 @@
     {
         List<MetaFinanceira> ListarMetas();
 
-        MetaFinanceira? ConsultarMeta(int id);
+        MetaFinanceira? ConsultarMeta(Guid id);
 
         void CadastrarMeta(MetaFinanceira meta);
 
         void AtualizarMeta(MetaFinanceira meta);
 
-        void ExcluirMeta(int id);
+        void ExcluirMeta(Guid id);
     }
 }

@@ -1,7 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using GerenciadorMetasFinanceiras.Core;
-using GerenciadorMetasFinanceiras.Api.Models;
+using GerenciadorMetasFinanceiras.Api.DTOs.Requests;
 using GerenciadorMetasFinanceiras.Core.Services;
+
 
 namespace GerenciadorMetasFinanceiras.Api.Controllers
 {
@@ -25,7 +26,7 @@ namespace GerenciadorMetasFinanceiras.Api.Controllers
 
 
         [HttpGet("{id}")]
-        public IActionResult ConsultarMeta(int id)
+        public IActionResult ConsultarMeta(Guid id)
         {
             MetaFinanceira? meta = service.ConsultarMeta(id);
 
@@ -62,7 +63,7 @@ namespace GerenciadorMetasFinanceiras.Api.Controllers
 
 
         [HttpPut("{id}")]
-        public IActionResult AtualizarMeta(int id, CadastroMetaFinanceiraRequest cadastro)
+        public IActionResult AtualizarMeta(Guid id, AtualizacaoMetaFinanceiraRequest cadastro)
         {
             try
             {
@@ -88,7 +89,7 @@ namespace GerenciadorMetasFinanceiras.Api.Controllers
 
         [HttpPatch("{id}")]
         public IActionResult AtualizarMetaParcial(
-    int id, AtualizacaoParcialMetaFinanceira cadastro)
+    Guid id, AtualizacaoParcialMetaFinanceiraRequest cadastro)
         {
             try
             {
@@ -113,7 +114,7 @@ namespace GerenciadorMetasFinanceiras.Api.Controllers
         }
 
         [HttpDelete("{id}")]
-        public IActionResult ExcluirMeta(int id)
+        public IActionResult ExcluirMeta(Guid id)
         {
             bool excluida = service.ExcluirMeta(id);
 
