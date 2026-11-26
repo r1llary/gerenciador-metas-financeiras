@@ -1,6 +1,6 @@
-﻿namespace GerenciadorMetasFinanceiras.Api.Models
+﻿namespace GerenciadorMetasFinanceiras.Api.DTOs.Requests
 {
-    public class CadastroMetaFinanceiraRequest
+    public class AtualizacaoMetaFinanceiraRequest
     {
         public string Nome { get; set; } = string.Empty;
         public decimal ValorObjetivo { get; set; }

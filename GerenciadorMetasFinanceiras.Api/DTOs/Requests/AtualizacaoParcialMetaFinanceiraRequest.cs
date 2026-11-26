@@ -1,6 +1,6 @@
-﻿namespace GerenciadorMetasFinanceiras.Api.Models
+﻿namespace GerenciadorMetasFinanceiras.Api.DTOs.Requests
 {
-    public class AtualizacaoParcialMetaFinanceira
+    public class AtualizacaoParcialMetaFinanceiraRequest
     {
         public string? Nome { get; set; }
 

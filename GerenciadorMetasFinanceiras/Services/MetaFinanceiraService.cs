@@ -16,7 +16,7 @@ namespace GerenciadorMetasFinanceiras.Core.Services
             return repository.ListarMetas();
         }
 
-        public MetaFinanceira? ConsultarMeta(int id)
+        public MetaFinanceira? ConsultarMeta(Guid id)
         {
             return repository.ConsultarMeta(id);
         }
@@ -36,7 +36,7 @@ namespace GerenciadorMetasFinanceiras.Core.Services
         }
 
         public MetaFinanceira? AtualizarMeta(
-    int id, string nome, decimal valorObjetivo, decimal valorEconomizado)
+    Guid id, string nome, decimal valorObjetivo, decimal valorEconomizado)
         {
             MetaFinanceira? metaExistente = repository.ConsultarMeta(id);
 
@@ -59,7 +59,7 @@ namespace GerenciadorMetasFinanceiras.Core.Services
         }
 
         public MetaFinanceira? AtualizarMetaParcial(
-    int id,
+    Guid id,
     string? nome,
     decimal? valorObjetivo,
     decimal? valorEconomizado)
@@ -84,7 +84,7 @@ namespace GerenciadorMetasFinanceiras.Core.Services
             return meta;
         }
 
-        public bool ExcluirMeta(int id)
+        public bool ExcluirMeta(Guid id)
         {
             MetaFinanceira? meta = repository.ConsultarMeta(id);
 

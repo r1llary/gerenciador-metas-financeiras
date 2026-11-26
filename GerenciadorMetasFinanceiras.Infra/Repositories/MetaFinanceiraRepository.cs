@@ -6,21 +6,20 @@ namespace GerenciadorMetasFinanceiras.Infra.Repositories
     public class MetaFinanceiraRepository : IMetaFinanceiraRepository
     {
         private readonly List<MetaFinanceira> metas = new List<MetaFinanceira>();
-        private int proximoId = 1;
 
         public List<MetaFinanceira> ListarMetas()
         {
             return metas;
         }
 
-        public MetaFinanceira? ConsultarMeta(int id)
+        public MetaFinanceira? ConsultarMeta(Guid id)
         {
             return metas.Find(m => m.Id == id);
         }
 
         public void CadastrarMeta(MetaFinanceira meta)
         {
-            meta.Id = proximoId++;
+            meta.Id = Guid.NewGuid();
             metas.Add(meta);
         }
 
@@ -34,7 +33,7 @@ namespace GerenciadorMetasFinanceiras.Infra.Repositories
             }
         }
 
-        public void ExcluirMeta(int id)
+        public void ExcluirMeta(Guid id)
         {
             MetaFinanceira? meta = ConsultarMeta(id);
 

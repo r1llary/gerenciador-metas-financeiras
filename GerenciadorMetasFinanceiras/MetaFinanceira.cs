@@ -2,7 +2,7 @@
 {
     public class MetaFinanceira
     {
-        public int Id { get; set; }
+        public Guid Id { get; set; }
         public string Nome { get; private set; }
         public decimal ValorObjetivo { get; private set; }
         public decimal ValorEconomizado { get; private set; }
