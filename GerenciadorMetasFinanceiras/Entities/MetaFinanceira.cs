@@ -1,4 +1,4 @@
-﻿namespace GerenciadorMetasFinanceiras.Core
+﻿namespace GerenciadorMetasFinanceiras.Core.Entities
 {
     public class MetaFinanceira
     {

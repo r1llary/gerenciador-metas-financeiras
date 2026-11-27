@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using GerenciadorMetasFinanceiras.Core;
 using GerenciadorMetasFinanceiras.Api.DTOs.Requests;
 using GerenciadorMetasFinanceiras.Core.Services;
+using GerenciadorMetasFinanceiras.Core.Entities;
 
 
 namespace GerenciadorMetasFinanceiras.Api.Controllers

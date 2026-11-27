@@ -1,4 +1,5 @@
-﻿using GerenciadorMetasFinanceiras.Core.Interfaces;
+﻿using GerenciadorMetasFinanceiras.Core.Entities;
+using GerenciadorMetasFinanceiras.Core.Interfaces;
 
 namespace GerenciadorMetasFinanceiras.Core.Services
 {

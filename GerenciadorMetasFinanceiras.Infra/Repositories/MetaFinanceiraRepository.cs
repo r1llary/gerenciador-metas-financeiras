@@ -1,4 +1,4 @@
-﻿using GerenciadorMetasFinanceiras.Core;
+﻿using GerenciadorMetasFinanceiras.Core.Entities;
 using GerenciadorMetasFinanceiras.Core.Interfaces;
 
 namespace GerenciadorMetasFinanceiras.Infra.Repositories
