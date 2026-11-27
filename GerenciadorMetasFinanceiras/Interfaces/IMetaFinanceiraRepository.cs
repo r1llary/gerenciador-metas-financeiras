@@ -1,4 +1,6 @@
-﻿namespace GerenciadorMetasFinanceiras.Core.Interfaces
+﻿using GerenciadorMetasFinanceiras.Core.Entities;
+
+namespace GerenciadorMetasFinanceiras.Core.Interfaces
 {
     public interface IMetaFinanceiraRepository
     {

@@ -10,7 +10,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddSingleton<IMetaFinanceiraRepository, MetaFinanceiraRepository>();
 
-builder.Services.AddScoped<MetaFinanceiraService>();
+builder.Services.AddSingleton<MetaFinanceiraService>();
 
 var app = builder.Build();
 
